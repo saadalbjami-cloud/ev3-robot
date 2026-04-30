@@ -1,52 +1,51 @@
-🤖 EV3 Autonomous Robot Navigation
+# 🤖 EV3 Autonomous Robot Navigation
 
-A MicroPython-based autonomous navigation system implemented on the LEGO EV3 platform.
-The robot is designed to operate in unknown environments, making real-time decisions for exploration, obstacle avoidance, and path optimization using a hybrid intelligent strategy.
+A MicroPython-based autonomous navigation system built for the LEGO EV3 platform. The robot operates in unknown environments and makes real-time decisions for exploration, obstacle avoidance, and path optimization using a hybrid intelligent approach.
 
-🧠 Project Summary
+## 🧠 Project Overview
+This project simulates autonomous robotic behavior in unknown or maze-like environments. It integrates multiple navigation strategies to balance exploration efficiency and optimal pathfinding, enabling robust decision-making in dynamic conditions.
 
-This project simulates real-world autonomous robotics behavior in partially unknown or maze-like environments.
-It integrates multiple navigation strategies to balance exploration efficiency and optimal pathfinding, mimicking decision-making in mobile robotic systems.
+## ⚙️ Features
+- Fully autonomous navigation without human intervention  
+- Real-time obstacle detection and avoidance  
+- Hybrid navigation system (exploration + optimal pathfinding)  
+- Return-to-start capability  
+- Modular and structured MicroPython code  
+- Sensor-driven decision making  
 
-⚙️ Key Features
-Fully autonomous navigation without human intervention
-Real-time obstacle detection and avoidance
-Hybrid decision-making system (exploration + optimal path planning)
-Ability to return to the starting position
-Modular and structured MicroPython architecture for EV3
-Sensor-driven adaptive behavior
-🧠 Algorithms & Strategy
+## 🧠 Algorithms Used
+- A* Pathfinding Algorithm → optimal path computation with partial map knowledge  
+- Random Mouse Algorithm → exploration of unknown areas  
+- Right-Hand Rule → maze traversal fallback strategy  
 
-The system combines multiple algorithms to handle different navigation scenarios:
+These algorithms are combined into a hybrid system for improved robustness and adaptability.
 
-A* Pathfinding Algorithm → computes the optimal path when the map is partially known
-Random Mouse Algorithm → enables exploration of unknown areas
-Right-Hand Rule → ensures reliable maze traversal and fallback navigation
+## 🛠️ Hardware Platform
+- LEGO Mindstorms EV3 Brick  
+- Ultrasonic Sensor (distance measurement & obstacle detection)  
+- Color Sensor (surface and line detection)  
+- Gyro Sensor (orientation and angle control)  
+- EV3 Motors (movement and steering)  
 
-➡️ These algorithms are integrated into a hybrid control strategy to improve robustness in dynamic environments.
+## 📁 Project Structure
+- src/ → MicroPython source code for EV3 robot  
+- docs/report.pdf → technical project report  
+- docs/presentation.pptx → presentation slides  
 
-🛠️ Hardware Platform
-LEGO Mindstorms EV3 Brick
-Ultrasonic Sensor → distance measurement & obstacle detection
-Color Sensor → surface detection and navigation cues
-Gyro Sensor → orientation and angle control
-EV3 Motors → movement and steering control
-📁 Project Structure
-src/ → core MicroPython implementation for EV3
-docs/report.pdf → detailed technical report (design, algorithms, results)
-docs/presentation.pptx → project presentation slides
-📊 Results & Outcomes
-Demonstrated successful autonomous navigation in unknown environments
-Improved navigation reliability using hybrid algorithm switching
-Reduced unnecessary movement compared to single-algorithm approaches
-Verified stable performance using EV3 hardware testing
-🎯 Project Objectives
-Implement real-world robotics algorithms in embedded systems
-Develop autonomous decision-making using sensor inputs
-Combine multiple navigation strategies into a single intelligent system
-Bridge theoretical algorithms with practical robotics implementation
-🚀 Technical Highlights
-Event-driven robotic control system
-Hybrid AI-inspired navigation logic
-Efficient sensor fusion for decision-making
-Scalable and modular code structure for future improvements
+## 📊 Results
+- Successful autonomous navigation in unknown environments  
+- Improved efficiency using hybrid algorithm switching  
+- Reduced unnecessary movement compared to single-strategy methods  
+- Stable real-world performance on EV3 hardware  
+
+## 🎯 Objectives
+- Implement real-world robotics algorithms in embedded systems  
+- Develop autonomous decision-making using sensor inputs  
+- Combine multiple navigation strategies into one system  
+- Bridge theory with practical robotics implementation  
+
+## 🚀 Technical Highlights
+- Event-driven control system  
+- Hybrid AI-inspired navigation logic  
+- Sensor fusion for decision making  
+- Modular and scalable architecture
